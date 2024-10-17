@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey on your satisfaction with life.</title>
+    <link rel="stylesheet" href="./styles.css">
+
+
+</head>
+<body>
+    <h1 id="title">Survey on your satisfaction with life</h1>
+    <p id="description">Life sucks sometimes, but this survey is here to make it worse!</p>
+    <form action="post" id="survey-form">
+        <label for="name" id="name-label">Name:<input type="text" id="name" placeholder="Ben Dover" required></label>
+        <label for="email" id="email-label">Email:</label><input type="email" id="email" placeholder="lotsacrack@poomail.com" required>
+        <label for="number" id="number-label">Age:</label><input type="number" id="number" min="13" max="120" placeholder="69">
+    
+        <br><br>
+        <label>Gender:</label>
+        <label for="male"><input id="male" type="radio" name="gender" class="inline" value="1" checked /> Male</label>
+        <label for="female"><input id="female" type="radio" name="gender" class="inline"  value="2"/> Female</label>
+        <label for="lghdtv"><input id="lghdtv" type="radio" name="gender" class="inline" value="3"/> lghdtv</label>
+
+        <br>
+        <label>Pick a terrible life decision:</label>
+        <select name="life-decisions" id="dropdown">
+            <option value="one" name="decision">Play Valorant</option>
+            <option value="two" name="decision">Have kids</option>            <option value="three" name="decision">Insider trading</option>
+            <option value="three" name="decision">Insider trading</option>
+        </select>
+        <br>
+        <br>
+        <label>How can we make this survey more unbearable?</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <input type="checkbox" value="agreement" required><label for="agreement" class="inline"> I will take measures to improve my life</label>
+        <br>
+        <input type="checkbox" value="terms" required><label for="terms" class="inline"> I am not butthurt by this survey</label>
+
+        <input type="submit" id="submit" type="submit" />
+
+
+
+    </form>
+</body>
+</html>
