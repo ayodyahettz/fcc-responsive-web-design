@@ -1,0 +1,16 @@
+p, ol{
+  font-size: small;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+pre, code{
+  border-radius: 5px;
+  background-color: #ddd;
+  overflow-wrap: break-word;
+}
+
+
