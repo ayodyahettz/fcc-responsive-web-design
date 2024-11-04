@@ -1,19 +1,30 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(8, 8, 8);
-    color: silver;
+    /* background-color: rgb(8, 8, 8); */
+    background-color: white;
+    color: black;
 }
 
 #title{
-    font-size: 40px;
+    font-size: 185px;
+    padding-bottom: 20px;
     text-align: center;
+    text-transform: uppercase;
+    background: url(https://th.bing.com/th/id/R.a307130c5e4a5227a68effa95a31016f?rik=81VE1803q7q4Og&pid=ImgRaw&r=0);
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
 }
 
-#img{
-    margin-left:auto;
+#image{
+    margin-left: auto;
     margin-right: auto;
-    max-width: none;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
+
 img{
     display: block;
     max-width: 100%;
@@ -22,15 +33,20 @@ img{
 }
 
 #motto{
-    font-size: 14px;
-    margin: auto;
-    padding: 0px 0px 0px 450px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    /* background-color: silver; */
+
+    font-weight: 500;
 }
 
 .title{
-    background-color: #70018f;
-    margin: -10px -7px 0px -7px; 
-    color: white;
+    /* margin: -10px -7px 0px -7px;  */
+    color: black;
+    display: block;
+    /* background-image: url(https://vignette.wikia.nocookie.net/roalddahl/images/5/50/Wiki-background/revision/latest?cb=20160108213012); */
+    
 }
 
 .center{
@@ -63,10 +79,10 @@ webkit-scrollbar-thumb:hover{
 }
 
 a:link{
-    color: #70018f;
+    color: black;
 }
 a:visited{
-    color: white;
+    color: #70018f;
 }
 
 #copyrights{
@@ -79,6 +95,7 @@ footer{
     color: white;
     margin: 2px -7px -7px -7px;
     padding-bottom: 5px;
+
 }
 .grid-container{
     display: grid;
@@ -88,7 +105,7 @@ footer{
 
 #socials{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0px 0px 0px 200px;
+    padding: 0px 0px 0px 65px;
     display: grid;
     grid-template-columns: 0.25fr 0.25fr 0.25fr;
     grid-gap: 5px;
