@@ -134,7 +134,7 @@
             <p>
                 You can put elements inside other elements too - this is called 
                 <b>nesting</b>. If we wanted to state that our cat is <b>very</b> grumpy, 
-                we could wrap the word "very" in a <code><a href="#strong">&lt;strong&gt;</a></code> 
+                we could wrap the word "very" in a <code><a href="#strong-element">&lt;strong&gt;</a></code> 
                 element, which means that the word is to be strongly emphasized:
             </p>
             <code>
@@ -142,10 +142,10 @@
             </code>
             <p>
                 You do however need to make sure that your elements are properly 
-                nested. In the example above, we opened the <code><a href="#p">&lt;p&gt;</a></code> 
-                element first, then the <code><a href="#strong">&lt;strong&gt;</a></code> 
-                element; therefore, we have to close the <code><a href="#strong">&lt;strong&gt;</a></code> 
-                element first, then the <code><a href="#p">&lt;p&gt;</a></code> element. The following is incorrect:
+                nested. In the example above, we opened the <code><a href="#p-element">&lt;p&gt;</a></code> 
+                element first, then the <code><a href="#strong-element">&lt;strong&gt;</a></code> 
+                element; therefore, we have to close the <code><a href="#strong-element">&lt;strong&gt;</a></code> 
+                element first, then the <code><a href="#p-element">&lt;p&gt;</a></code> element. The following is incorrect:
             </p>
             <code>
                 &lt;p&gt;My cat is &lt;strong&gt;very grumpy.&lt;/p&gt;&lt;/strong&gt;
@@ -183,18 +183,18 @@
             </p>
             <pre>
                 <code>
-&lt;!DOCTYPE html&gt;
-    &lt;html lang="en-us&gt;
-        &lt;head&gt;
-            &lt;meta charset="utf-8"/&gt;
-            &lt;meta name="viewport" content="width=device-width"/&gt;
-            &lt;title&gt;Test Page&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;img src="images/firefox-icon.png" alt="Test Image"/&gt;
-        &lt;/body&gt; 
-    &lt;/html&gt;
-                </code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en-us&gt;
+            &lt;head&gt;
+                &lt;meta charset="utf-8"/&gt;
+                &lt;meta name="viewport" content="width=device-width"/&gt;
+                    &lt;title&gt;Test Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;img src="images/firefox-icon.png" alt="Test Image"/&gt;
+            &lt;/body&gt; 
+        &lt;/html&gt;
+        </code>
             </pre>
             <ul>
                 <li>
@@ -207,12 +207,12 @@
                     make sure your document behaves correctly. That's all you need to know for now.
                 </li>
                 <li>
-                    <code>&lt;html&gt;&lt;/html&gt;</code> - The <code><a href="#html">&lt;html&gt;</a></code> 
+                    <code>&lt;html&gt;&lt;/html&gt;</code> - The <code><a href="#html-element">&lt;html&gt;</a></code> 
                     This element wraps all the content on the entire page and is sometimes known 
                     as the root element. It also includes the <code>lang</code> attribute, setting 
                     the primary language of the document.
                 </li>
-                <li><code>&lt;head&gt;&lt;/head&gt;</code> - The <code><a href="#head">&lt;head&gt;</a></code> 
+                <li><code>&lt;head&gt;&lt;/head&gt;</code> - The <code><a href="#head-element">&lt;head&gt;</a></code> 
                     element. This element acts as a container for all the stuff you want to include 
                     on the HTML page that <i>isn't</i> the content you are showing to your page's 
                     viewer's. This includes things like <a href="#keywords">keywords</a> and a page description  
@@ -230,11 +230,11 @@
                     from rendering pages wider than the viewport and then shrinking them down.
                 </li>
                 <li>
-                    <code>&lt;title&gt;&lt;/title&gt;</code> - The <code><a href="#title">&lt;title&gt;</a></code> element. This 
+                    <code>&lt;title&gt;&lt;/title&gt;</code> - The <code><a href="#title-element">&lt;title&gt;</a></code> element. This 
                     sets the title of your page, which is the title that appears in the browser tab the page is 
                     loaded in. It is also used to describe the page when you bookmark/favourite it.
                 </li>
-                <li><code>&lt;body&gt;&lt;/body&gt;</code></li> - The <code><a href="#body">&lt;body&gt;</a></code> element. This 
+                <li><code>&lt;body&gt;&lt;/body&gt;</code></li> - The <code><a href="#body-element">&lt;body&gt;</a></code> element. This 
                 contains <i>all</i> the content that you want to show to web users when they visit your page, whether that's text 
                 images, video games, playable audio tracks, or whatever else.
             </ul>
@@ -250,10 +250,10 @@
                         HTML document can too. HTML contains 6 heading levels, although you'll commonly use only 3 to 4 at most.
                     </p>
                     <pre><code>
-                        &lt;h1&gt;My main title&lt;/h1&gt;
-                        &lt;h2&gt;My top level heading&lt;/h2&gt;
-                        &lt;h3&gt;My subheading&lt;/h3&gt;
-                        &lt;h4&gt;My sub-subheading&lt;/h4&gt;
+        &lt;h1&gt;My main title&lt;/h1&gt;
+        &lt;h2&gt;My top level heading&lt;/h2&gt;
+        &lt;h3&gt;My subheading&lt;/h3&gt;
+        &lt;h4&gt;My sub-subheading&lt;/h4&gt;
                     </code></pre>    
                 </div>
                 <div class="sub-section" id="paragraphs">
@@ -262,7 +262,7 @@
                 for containing paragraphs of text; you'll use these frequently when marking up regular 
                 text content:</p>
                 <pre><code>
-                    &lt;p&gt;This is a single paragraph&lt;/p&gt;
+        &lt;p&gt;This is a single paragraph&lt;/p&gt;
                 </code></pre>
                 </div>
                 <div class="sub-section" id="lists">
@@ -294,11 +294,162 @@
             <header for="references">
                 <h2>References</h2>
             </header>
+            <h3>Main</h3>
+            <table>
+                    <tr>
+                        <th class="ele-col">Element</th>
+                        <th class="desc-col">Description</th>
+                    </tr>
+                    <tr id="html-element">
+                        <td><code>&lt;html&gt;</code></td>
+                        <td><p>Represents the root (top-level element) of an HTML document, 
+                            so it is also referred to as the <i>root element.</i> All other 
+                            elements must be descendants of this element. 
+                        </p></td>
+                    </tr>
+            </table>
+            <h3>Document Metadata</h3>
+            <p>Metadata contains information about the page. This includes information 
+                about styles, scripts and data to help software use and render the page. 
+                Metadata for styles and scripts may be defined in the page or linked to 
+                another file that has the information.
+            </p>
+            <table>
+                    <tr>
+                        <th class="ele-col">Element</th>
+                        <th class="desc-col">Description</th>
+                    </tr>
+                    <tr id="base-element">
+                        <td><code>&lt;base&gt;</code></td>
+                        <td>
+                            <p>Specifies the base URL to use for all relative URLs in a document.
+                                There can only be one such element in a document.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="head-element">
+                        <td><code>&lt;head&gt;</code></td>
+                        <td>
+                            <p>Contains machine-readable information (metadata) about the document 
+                                like its <a href="#title">title</a>, <a href="#script">scripts</a> and 
+                                <a href="#stylesheet">stylesheets</a>.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="link-element">
+                        <td><code>&lt;link&gt;</code></td>
+                        <td><p>Specifies relationsips between the current document and an external 
+                            resource. This element is most commonly used to link to CSS but is also 
+                            used to establish site icons (both "favicon" style icons and icons for the 
+                            home screen and apps on mobile devices) among other things.
+                        </p></td>
+                    </tr>
+                    <tr id="meta-element">
+                        <td><code>&lt;meta&gt;</code></td>
+                        <td>
+                            <p>Represents metadata that cannot be represented by 
+                                some other HTML meta-related elements, like 
+                                <a href="#base">&lt;base&gt;</a>, <a href="#link">&lt;link&gt;</a>, 
+                                <a href="#script">&lt;script&gt;</a>, <a href="#style">&lt;style&gt;</a> 
+                                and <a href="#title">&lt;title&gt;</a>. 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="style-element">
+                        <td><code>&lt;style&gt;</code></td>
+                        <td>
+                            <p>Contains style information for a document or part of a document. 
+                                It contains CSS, which is applied to the contents of the document 
+                                containing this element.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr id="title-element">
+                        <td><code>&lt;title&gt;</code></td>
+                        <td>
+                            <p>Defines the document's title that is shown in a browser's title 
+                                bar or a page's tab. It only contains text; tags within the element 
+                                are ignored.
+                            </p>
+                        </td>
+                    </tr>
+            </table>
+            <h3>Sectioning Root</h3>
+            <table>
+                <tr>
+                    <th class="ele-col">Element</th>
+                    <th class="desc-col">Description</th>
+                </tr>
+                <tr id="body-element">
+                    <td><code>&lt;body&gt;</code></td>
+                    <td><p>Represents the content of an HTML document. There can only be one such element in a document.
+                    </p></td>
+                </tr>
+            </table>
+            <h3>Content Sectioning</h3>
+            <p>Content sectioning elements allow you to organize the document content 
+                into logical pieces. Use the sectioning elements to create a broad ouline 
+                for your page content, including header and footer navigation, and heading 
+                elements to identify sections of content.
+            </p>
+            <table>
+                <tr>
+                    <th class="ele-col">Element</th>
+                    <th class="desc-col">Description</th>
+                </tr>
+                <tr id="address-element">
+                    <td><code>&lt;address&gt;</code></td>
+                    <td>
+                        <p>indicates that the enclosed HTML provides contact information for a person, 
+                            or people, or for an organization.
+                        </p>
+                    </td>
+                </tr>
+                <tr id="article-element">
+                    <td><code>&lt;article&gt;</code></td>
+                    <td>
+                        <p>Represents a self-contained composition in a document, page, application, 
+                            or site, which is intended to be independently distributable or reusable 
+                            (e.g., in syndication). Examples include a forum post, a magazine or 
+                            newspaper article, a blog entry, a product card, a user submitted comment, an 
+                            interactive widget or gadget, or any other independent item of content.
+                        </p>
+                    </td>
+                </tr>
+                <tr id="aside-element">
+                    <td><code>&lt;aside&gt;</code></td>
+                    <td><p>Represents a portion of a document whose content is only 
+                        indirectly related to the document's main content. Asides are frequently 
+                        presented as sidebars or call-out boxes.
+                    </p></td>
+                </tr>
+                <tr id="footer-element">
+                    <td><code>&lt;footer&gt;</code></td>
+                    <td>
+                        <p>Represents a footer for its nearest ancestor 
+                            sectioning content or sectioning root element. 
+                            A footer typically contains information about the author 
+                            of the section, copyright data, or links to related documents.
+                        </p>
+                    </td>
+                </tr>
+                <tr id="header-element">
+                    <td><code>&lt;header&gt;</code></td>
+                    <td>
+                        <p>Represents  introductory content, typically a group of introductory 
+                            or navigational aids. It may contain some heading elements but also a 
+                            logo, a search form, an author name, and other elements.
+                        </p>
+                    </td>
+                </tr>
+            </table>
         </section>
     </main>
     <footer>
         <p>Technical Documentation Page - freeCodeCamp Certification Project</p>
         <p>Ayodya Hettiarachchi - 2024</p>
         <!-- add links to socials, github and certifications -->
+        <!-- all information presented in this project was sourced from MDN web docs -->
     </footer>
+    
 </html>
