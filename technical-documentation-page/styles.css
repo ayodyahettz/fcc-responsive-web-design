@@ -1,3 +1,11 @@
+*{
+  background-color: whitesmoke;
+}
+main{
+  padding: 0px 100px 0px 100px;
+  /* background-color: whitesmoke; */
+}
+
 p, ol{
   font-size: small;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,7 +18,54 @@ h1, h2, h3 {
 pre, code{
   border-radius: 5px;
   background-color: #ddd;
-  overflow-wrap: break-word;
+  overflow: auto;
+}
+
+pre, pre>code{
+  /* margin: 0px 10px 0px 10px; */
+  text-align: left;
+  margin: 0px 80px 0px 80px;
+
+}
+
+table, th, td{
+  border: 2px solid #004b49;
+  border-collapse: collapse;
+}
+
+th{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td{
+  padding: 0px 15px 0px 15px;
+}
+
+.ele-col{
+  width: 40%;
+}
+
+.desc-col{
+  width: 100%;
 }
 
 
+footer, footer>p{
+  padding: 0px 100px 0px 100px;
+  background-color: #004b49;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1000px){
+  main{
+    background-color: whitesmoke;
+    padding: 0px 50px 0px 50px 
+  }
+
+  pre, pre>code{
+    /* margin: 0px 10px 0px 10px; */
+    text-align: left;
+    margin: 0px 20px 0px 20px;
+  }
+  
+}
