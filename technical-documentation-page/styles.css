@@ -2,7 +2,7 @@
   background-color: whitesmoke;
 }
 main{
-  padding: 0px 100px 0px 100px;
+  padding: 0px 50px 0px 270px;
   /* background-color: whitesmoke; */
 }
 
@@ -51,9 +51,41 @@ td{
 
 
 footer, footer>p{
-  padding: 0px 100px 0px 100px;
+  padding: 0px 28px 0px 270px;
   background-color: #004b49;
   color: #fff;
+  margin-bottom: -10px;
+  text-align: right;
+}
+
+.nav-links, #navbar{
+  list-style-type: none;
+  margin: -22px 2px 0px -8px ;
+  padding: 0;
+  background-color: #004b49;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+#navbar h1{
+  padding-bottom: 20px;
+  background-color: #004b49;
+  color: whitesmoke;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.nav-link{
+  padding-left: 3px;
+  display: block;
+  background-color: #004b49;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #004b49;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media only screen and (max-width: 1000px){
@@ -66,6 +98,54 @@ footer, footer>p{
     /* margin: 0px 10px 0px 10px; */
     text-align: left;
     margin: 0px 20px 0px 20px;
+  }
+
+  footer, footer>p{
+    padding: 0px 0px 0px 25px;
+    background-color: #004b49;
+    color: #fff;
+    margin-bottom: -10px;
+    text-align: right;
+  }
+  
+  #navbar, .nav-button{
+    overflow: hidden;
+    position: relative;
+    background-color: #004b49;
+    top: 0;
+    position: sticky;
+    width: 100.9%;
+    padding: 5px;
+    height: 85px;
+  }
+
+  #navbar h1{
+    padding-left: 40px;
+    padding-top: 10px;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  #navbar a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .collapse{
+    display: inline-block
+  }
+
+  .topnav a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   
 }
