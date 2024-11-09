@@ -63,10 +63,8 @@ footer, footer>p{
   margin: -22px 2px 0px -8px ;
   padding: 0;
   background-color: #004b49;
-  width: 250px;
   height: 100%;
   position: fixed;
-  overflow: auto;
 }
 
 #navbar h1{
@@ -88,7 +86,7 @@ footer, footer>p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 815px){
   main{
     background-color: whitesmoke;
     padding: 0px 50px 0px 50px 
@@ -107,45 +105,52 @@ footer, footer>p{
     margin-bottom: -10px;
     text-align: right;
   }
-  
-  #navbar, .nav-button{
-    overflow: hidden;
-    position: relative;
-    background-color: #004b49;
-    top: 0;
-    position: sticky;
-    width: 100.9%;
-    padding: 5px;
-    height: 85px;
-  }
 
-  #navbar h1{
-    padding-left: 40px;
-    padding-top: 10px;
-  }
-
-  .nav-links{
-    display: none;
-  }
-
-  #navbar a{
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-
-  .collapse{
-    display: inline-block
-  }
-
-  .topnav a.icon{
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
+.navbar {
+  background-color: #004b49;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  max-height: 80px;
+  border: none;
+  z-index: 1;
+  border-bottom: none;
 }
+
+.navbar ul{
+  border: none;
+  height: 160px;
+  width: 800px;
+  padding: 0;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+}
+
+.nav-links, #navbar{
+  list-style-type: none;
+  margin: -22px 2px 0px -8px ;
+  padding: 0;
+  background-color: #004b49;
+  width: 800px;
+  height: 100%;
+  position: fixed;
+  /* overflow: auto; */
+}
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-links, #navbar{
+    list-style-type: none;
+    margin: -22px 2px 0px -8px ;
+    padding: 0;
+    background-color: #004b49;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    /* overflow: auto; */
+  }
+}
+
+
