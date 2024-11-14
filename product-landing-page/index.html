@@ -14,15 +14,29 @@
         <header id="header">
             <img src="https://www.google.com/" alt="image to pass annoying test" id="header-img">
             
-            <nav id="navbar" class="navbar">
+            <nav id="nav-bar" class="nav-bar">
                 <ul>
-                    <li id="nav-link" href="#wishlist">Wishlist</li>
-                    <li id="nav-link" href="#cart">Cart</li> 
-                    <li id="nav-link" href="#account">Account</li>
+                    <li> <a class="nav-link" href="#wishlist">Wishlist</a></li>
+                    <li><a class="nav-link" href="#cart">Cart</a></li> 
+                    <li><a class="nav-link" href="#account">Account</a></li>
                 </ul>
                 
             </nav>
         </header>
     </div>
+        <!-- add video link here -->
+        <video width="320" height="240" controls id="video">
+            <source src="movie.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" placeholder="bendover@something.com" name="email">
+        <input type="submit" name="Submit" id="submit">
+
+    </form>
+    <div id="wishlist"></div>
+    <div id="cart"></div>
+    <div id="account"></div>
 </body>
 </html>

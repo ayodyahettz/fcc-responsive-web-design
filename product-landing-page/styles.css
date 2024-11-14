@@ -1,0 +1,21 @@
+*{
+    font-family: "Urbanist", sans-serif;
+}
+
+img{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        padding: 40px;
+    }
+}
