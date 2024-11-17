@@ -10,31 +10,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="nav-bar">
         <header id="header">
             <img src="https://www.google.com/" alt="image to pass annoying test" id="header-img">
             
             <nav id="nav-bar" class="nav-bar">
-                <ul>
-                    <li> <a class="nav-link" href="#wishlist">Wishlist</a></li>
-                    <li><a class="nav-link" href="#cart">Cart</a></li> 
-                    <li><a class="nav-link" href="#account">Account</a></li>
-                </ul>
+                <div class="nav-link"><a href="#wishlist">Wishlist</a></div>
+                <div class="nav-link"><a href="#cart">Cart</a></div>
+                <div class="nav-link"><a href="#account">Account</a></div>
+                
                 
             </nav>
         </header>
     </div>
-        <!-- add video link here -->
+        <!-- add video link here, empty for now -->
+    <div class=" video">
         <video width="320" height="240" controls id="video">
             <source src="movie.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
+    </div>
+    
+    <!-- <div class=" form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" id="email" placeholder="bendover@something.com" name="email" pattern="[A-Za-z1-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+            <input type="submit" name="Submit" id="submit">
+        </form>
+    </div> -->
 
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" id="email" placeholder="bendover@something.com" name="email">
-        <input type="submit" name="Submit" id="submit">
-
-    </form>
+    <!-- test -->
+    <!-- register for newsletter button -->
+    <div class="form-container">
+        <input class="reg-checkbox" type="checkbox" id="checkbox">
+        <div class="reg-container">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input class="reg-email" type="email" id="email" placeholder="bendover@somemail.yay" pattern="[A-Za-z0-9./%+-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]{1-63}$" required>
+                <label for="submit-label" for="checkbox">
+                    <input type="submit" name="Submit" id="submit" class="submit-button">
+                    <!-- <button class="submit-button" name="Submit" type="button">Submit</button> -->
+                </label>
+                <label for="checkbox" class="reg-toggle" data-title="Get our Newsletter"></label>
+            </form>
+        </div>
+    </div>
+   
     <div id="wishlist"></div>
     <div id="cart"></div>
     <div id="account"></div>
