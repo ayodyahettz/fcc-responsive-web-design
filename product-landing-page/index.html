@@ -30,29 +30,23 @@
           Your browser does not support the video tag.
           </video>
     </div>
-    
-    <!-- <div class=" form">
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" id="email" placeholder="bendover@something.com" name="email" pattern="[A-Za-z1-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
-            <input type="submit" name="Submit" id="submit">
-        </form>
-    </div> -->
 
-    <!-- test -->
-    <!-- register for newsletter button -->
-    <div class="form-container">
-        <input class="reg-checkbox" type="checkbox" id="checkbox">
-        <div class="reg-container">
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input class="reg-email" type="email" id="email" placeholder="bendover@somemail.yay" pattern="[A-Za-z0-9./%+-]+@[A-Za-z0-9.-]+\.[A-Za-z0-9]{1-63}$" required>
-                <label for="submit-label" for="checkbox">
-                    <input type="submit" name="Submit" id="submit" class="submit-button">
-                    <!-- <button class="submit-button" name="Submit" type="button">Submit</button> -->
-                </label>
-                <label for="checkbox" class="reg-toggle" data-title="Get our Newsletter"></label>
-            </form>
+    <div class="subcribe">
+        <input class="c-checkbox" type="checkbox" id="checkbox">
+        <div class="c-formContainer">
+          <form class="c-form" action="https://www.freecodecamp.com/email-submit">
+            <input class="c-form__input" placeholder="E-mail" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+            <label class="c-form__buttonLabel" for="checkbox">
+              <!-- <button class="c-form__button" type="button">Send</button> -->
+              <input type="submit" name="Submit" id="submit" class="c-form__button">
+            </label>
+            <label class="c-form__toggle" for="checkbox" data-title="Subscribe"></label>
+          </form>
         </div>
     </div>
+    
+
+    
    
     <div id="wishlist"></div>
     <div id="cart"></div>
