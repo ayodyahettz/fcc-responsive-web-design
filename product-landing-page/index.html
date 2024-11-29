@@ -15,11 +15,20 @@
             <img src="https://www.google.com/" alt="image to pass annoying test" id="header-img">
             
             <nav id="nav-bar" class="nav-bar">
+                <!-- logo -->
                 <p class="brand"><span class="logo-art">Spo</span>tlight Books</p>
 
-                <div class="nav-link"><a href="#wishlist">Wishlist</a></div>
-                <div class="nav-link"><a href="#cart">Cart</a></div>
-                <div class="nav-link"><a href="#account">Account</a></div>
+                <!-- responsive toggle -->
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="nav-link-style"><a class="nav-link"  href="#latest">Latest</a></div>
+                <div class="nav-link-style"><a class="nav-link"  href="#popular">Bestsellers</a></div>
+                <div class="nav-link-style"><a class="nav-link"  href="#ebooks">Ebooks</a></div>
                 
                 
             </nav>
@@ -36,13 +45,13 @@
     <div class="subcribe">
         <input class="c-checkbox" type="checkbox" id="checkbox">
         <div class="c-formContainer">
-          <form class="c-form" action="https://www.freecodecamp.com/email-submit">
-            <input class="c-form__input" placeholder="E-mail" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+          <form class="c-form" id="form" action="https://www.freecodecamp.com/email-submit">
+            <input class="c-form__input" placeholder="E-mail" type="email" id="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
             <label class="c-form__buttonLabel" for="checkbox">
               <!-- <button class="c-form__button" type="button">Send</button> -->
               <input type="submit" name="Submit" id="submit" class="c-form__button">
             </label>
-            <label class="c-form__toggle" for="checkbox" data-title="Subscribe"></label>
+            <label class="c-form__toggle" for="checkbox" data-title="Subscribe for our best deals"></label>
           </form>
         </div>
     </div>
@@ -50,8 +59,36 @@
 
     
    
-    <div id="wishlist"></div>
-    <div id="cart"></div>
-    <div id="account"></div>
+    <div id="latest">
+        <h2>Latest Arrivals</h2>
+        <p>Fresh out of the metaphorial oven and still too hot to touch, our "Latest" 
+            section is where the cool kids shop. These products are so new even <i>they</i> 
+            don't even know how they got here. Don't be that person who hears about 
+            it later at brunch - jump on these now, or risk living in regret and 
+            reheated leftovers.
+        </p>
+    </div>
+    <div id="popular">
+        <h2>Popular Picks</h2>
+        <p>These products? They don't just sit at the cool table - they own it.
+            Our "Popular" section is full of overachievers that'll make you wonder 
+            how your own life decisions measure up. But hey, it's not a competition 
+            (spoiler: it totally is). Snag these best-sellers now, and maybe their 
+            success will rub off on you. Or at least you'll look like you know 
+            what you're doing.
+        </p> 
+    </div>
+    <div id="ebooks">
+        <h2>Ebooks</h2>
+        <p>Why lug around a book when you can have an entire library in your pocket?
+            Our Ebooks are smarter than your average self-help Instagram guru, and they 
+            won't slide into your DMs with "Hey, girl!" vibes. Upgrade your brain, 
+            flex your intellect, and finally have something smart to say at parties 
+            (assuming you still go to those).
+        </p>
+    </div>
+    <!-- javascript -->
+    <script src="./script.js"></script>
+
 </body>
 </html>
