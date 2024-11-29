@@ -24,7 +24,6 @@ img{
 
 .brand {
     display: flex;
-    /* background-color: pink; */
     justify-content: left;
     padding-left: 70px;
     text-align: left;
@@ -57,30 +56,39 @@ img{
     font-size: 1.26em;
     width: 100%;
     background-color: black;
-
+    z-index: 1;
 }
+
 .nav-link{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-link-style{
     text-transform: capitalize;
     text-align: left;    
-    padding: 40px 30px 20px 30px;
+    padding: 30px 90px 20px 20px;
     text-decoration: none;
 }
 
-.nav-link a{
+.nav-link-style a{
     text-decoration: none;
     padding: 10px;
     border-radius: 20px;
-}
-
-.nav-link a:visited{
     color: white;
 }
 
-.nav-link a:active{
+.nav-link-style a:visited{
     color: white;
 }
 
-.nav-link a:hover{
+.nav-link-style a:active{
+    color: white;
+    display: block;
+}
+
+.nav-link-style a:hover{
     background-color: white;
     color: black;
 }
@@ -99,6 +107,10 @@ img{
     display: flex;
 }
 
+h2{
+    font-size: 35px;
+}
+
 @media only screen and (max-width: 800px){
     body{
         padding: 40px;
@@ -111,7 +123,8 @@ img{
 
     &:checked + .c-formContainer {
         .c-form {
-            width: 37.5em;
+            width: 40em;
+            height: 5em;
         }
 
         .c-form__toggle {
@@ -162,6 +175,8 @@ img{
     border-radius: 6.25em;
     background-color: white;
     transition: 0.2s;
+    height: 5em;
+    width: 25em;
 }
 
 .c-form {
@@ -253,4 +268,51 @@ img{
     height: 100%;
     width: 5em;
     background-color: orange;
+}
+
+
+/* hamburger */
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+.menu-icon span{
+    background: white;
+    height: 3px;
+    width: 30px;
+    margin: 4px 0;
+    border-radius: 10px;
+    display: block;
+}
+
+/* hide checkbox */
+.menu-checkbox{
+    display: none;
+}
+
+/* responsive styling */
+@media (max-width: 768px){
+    .nav-link-style{
+        display: none;
+        flex-direction: column;
+        position:absolute;
+        text-align: center;
+        padding: 1rem 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+
+    }
+
+    /* show links when checked */
+    .menu-checkbox:checked ~ nav-link{
+        display: flex;
+    }
+    .menu-icon{
+        display: flex;
+    }
 }
