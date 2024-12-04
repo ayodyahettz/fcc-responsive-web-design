@@ -1,9 +1,10 @@
-const menuIcon = document.querySelector('.menu-icon');
-const navLink = document.querySelector('.nav-link-style');
+const carousel = document.getElementsById('carousel');
 
+function scrollCarousel(direction){
+    const scrollAmount = 220; //adjust based on card width and gap
+    carousel.scrollBy({
+        left:direction * scrollAmount,
+        behavior: 'smooth'
+    });
 
-menuIcon.addEventListener('click', () => {
-    navLink.forEach(link => {
-        link.classList.toggle('active');
-    })
-});
+}

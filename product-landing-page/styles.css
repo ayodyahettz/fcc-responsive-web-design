@@ -6,14 +6,14 @@
 
 body {
     font-size: 10px;
-    background-color: orange;
+    background-color: #FFB01F;
     
     margin: 0;
     display: grid;
     height: auto;
     width: auto ;
     place-items: center;
-    padding: 40px;
+    padding: 0px 40px 40px 40px;
 }
 
 
@@ -36,7 +36,7 @@ img{
 .logo-art{
     background-color: orange;
     border-radius: 40px;
-    color: black;
+    color: #071E21;
     height: 49px;
     width: 49px;
 }
@@ -55,8 +55,9 @@ img{
     left: 0;
     font-size: 1.26em;
     width: 100%;
-    background-color: black;
+    background-color: #071E21;
     z-index: 1;
+    margin-bottom: 80px;
 }
 
 .nav-link{
@@ -90,12 +91,12 @@ img{
 
 .nav-link-style a:hover{
     background-color: white;
-    color: black;
+    color: #071E21;
 }
 
 
 .video{
-    display: flex;
+    display: none;
     justify-content: center;
     margin-top: 40px;
     padding: 40px 30px 40px 30px;
@@ -167,6 +168,7 @@ h2{
 .c-formContainer {
     position: relative;
     font-weight: 700;
+    padding-top: 70px;
 }
 
 .c-form,
@@ -184,7 +186,7 @@ h2{
     transform: translateX(-50%);
     padding: 0.625em;
     box-sizing: border-box;
-    box-shadow: 0 0.125em 0.3125em rgba(black, 0.3);
+    box-shadow: 0 0.125em 0.3125em rgba(#071E21, 0.3);
 
     display: flex;
     justify-content: center;
@@ -316,3 +318,126 @@ h2{
         display: flex;
     }
 }
+
+
+
+.section{
+        height: 450px;
+        padding-top: 80px;
+}
+
+
+  
+  .container {
+    position: absolute;
+    /* height: 300px;
+    width: 600px;
+    top: 60px; */
+    left: calc(50% - 400px);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-30px);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+
+
+  .got-card{
+    background-image: url(./assets/got-card.jpg);
+    background-size: 100% 100%;
+  }
+
+  .thg-card{
+    background-image: url(./assets/thg-card.jpg);
+    background-size: 100% 100%;
+  }
+
+  .divergent-card{
+    background-image: url(./assets/divergent-card.jpg);
+    background-size: 100% 100%;
+  }
+
+  .lotr-card{
+    background-image: url(./assets/lotr-card.jpg);
+    background-size: 100% 100%;
+  }
+  .pm-card{
+    background-image: url(./assets/pm-card.jpg);
+    background-size: 100% 100%;
+  }
+
+.c22-card{
+    background-image: url(./assets/c22-card.jpg);
+    background-size: 100% 100%;
+}
+
+  .etif0card-card{
+    background-image: url(./assets/etif0card.jpg);
+    background-size: 100% 100%;
+  }
+
+.taosh-card{
+    background-image: url(./assets/taosh-card.jpg);
+    background-size: 100% 100%;
+}
+
+.tfw-card{
+    background-image: url(./assets/tfw-card.jpg);
+    background-size: 100% 100%;
+}
+
+.tw-card{
+    background-image: url(./assets/tw-card.jpg);
+    background-size: 100% 100%;
+}
+
+.ap-card{
+    background-image: url(./assets/ap-card.jpg);
+    background-size: 100% 100%;
+}
+.twow-card{
+    background-image: url(./assets/twow-card.jpg);
+    background-size: 100% 100%;
+}
+.hamlet-card{
+    background-image: url(./assets/hamlet-card.jpg);
+    background-size: 100% 100%;
+}
+.tgatpam-card{
+    background-image: url(./assets/tgatpam-card.jpg);
+    background-size: 100% 100%;
+}
+.tmr-card{
+    background-image: url(./assets/tmr-card.jpg);
+    background-size: 100% 100%;
+}
+
+/* modals */

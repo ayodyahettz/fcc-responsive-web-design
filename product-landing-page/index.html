@@ -34,32 +34,14 @@
             </nav>
         </header>
     </div>
-        <!-- add video link here, empty for now -->
-    <div class=" video">
-        <video width="320" height="240" controls id="video">
-            <source src="movie.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-    </div>
+  
 
-    <div class="subcribe">
-        <input class="c-checkbox" type="checkbox" id="checkbox">
-        <div class="c-formContainer">
-          <form class="c-form" id="form" action="https://www.freecodecamp.com/email-submit">
-            <input class="c-form__input" placeholder="E-mail" type="email" id="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
-            <label class="c-form__buttonLabel" for="checkbox">
-              <!-- <button class="c-form__button" type="button">Send</button> -->
-              <input type="submit" name="Submit" id="submit" class="c-form__button">
-            </label>
-            <label class="c-form__toggle" for="checkbox" data-title="Subscribe for our best deals"></label>
-          </form>
-        </div>
-    </div>
+    
     
 
     
    
-    <div id="latest">
+    <div id="latest" class="section">
         <h2>Latest Arrivals</h2>
         <p>Fresh out of the metaphorial oven and still too hot to touch, our "Latest" 
             section is where the cool kids shop. These products are so new even <i>they</i> 
@@ -67,8 +49,26 @@
             it later at brunch - jump on these now, or risk living in regret and 
             reheated leftovers.
         </p>
+        <div class="container">
+            <div class="card tfw-card">
+            
+            </div>
+            <div class="card twow-card">
+              
+            </div>
+            <div class="card c22-card">
+              
+            </div>
+            <div class="card tw-card">
+             
+            </div>
+            <div class="card ap-card">
+            </div>
+          </div>
+
     </div>
-    <div id="popular">
+    
+    <div id="popular" class="section">
         <h2>Popular Picks</h2>
         <p>These products? They don't just sit at the cool table - they own it.
             Our "Popular" section is full of overachievers that'll make you wonder 
@@ -77,8 +77,26 @@
             success will rub off on you. Or at least you'll look like you know 
             what you're doing.
         </p> 
+        <div class="container">
+            <div class="card lotr-card">
+            
+            </div>
+            <div class="card divergent-card">
+              
+            </div>
+            <div class="card hamlet-card">
+              
+            </div>
+            
+            <div class="card thg-card">
+             
+            </div>
+            <div class="card got-card">
+            </div>
+          </div>
+      
     </div>
-    <div id="ebooks">
+    <div id="ebooks" class="section">
         <h2>Ebooks</h2>
         <p>Why lug around a book when you can have an entire library in your pocket?
             Our Ebooks are smarter than your average self-help Instagram guru, and they 
@@ -86,7 +104,44 @@
             flex your intellect, and finally have something smart to say at parties 
             (assuming you still go to those).
         </p>
+        <div class="container">
+            <div class="card pm-card">
+            
+            </div>
+            <div class="card tgatpam-card">
+              
+            </div>
+            <div class="card etif0card-card">
+             
+            </div>
+            <div class="card taosh-card">
+            </div>
+            <div class="card tmr-card">
+              
+            </div>
+          </div>
     </div>
+          <!-- add video link here, empty for now -->
+          <div class=" video">
+            <video width="320" height="240" controls id="video">
+                <source src="movie.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+
+        <div class="subcribe">
+            <input class="c-checkbox" type="checkbox" id="checkbox">
+            <div class="c-formContainer">
+              <form class="c-form" id="form" action="https://www.freecodecamp.com/email-submit">
+                <input class="c-form__input" placeholder="E-mail" type="email" id="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+                <label class="c-form__buttonLabel" for="checkbox">
+                  <!-- <button class="c-form__button" type="button">Send</button> -->
+                  <input type="submit" name="Submit" id="submit" class="c-form__button">
+                </label>
+                <label class="c-form__toggle" for="checkbox" data-title="Subscribe for our best deals"></label>
+              </form>
+            </div>
+        </div>  
     <!-- javascript -->
     <script src="./script.js"></script>
 
