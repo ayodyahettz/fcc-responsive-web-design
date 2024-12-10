@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./donotcommit.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
                 </label>
 
                 <div class="nav-link-style"><a class="nav-link"  href="#latest">Latest</a></div>
-                <div class="nav-link-style"><a class="nav-link"  href="#popular">Bestsellers</a></div>
+                <div class="nav-link-style"><a class="nav-link"  href="#popular">Popular</a></div>
                 <div class="nav-link-style"><a class="nav-link"  href="#ebooks">Ebooks</a></div>
                 
                 
@@ -45,41 +45,8 @@
             reheated leftovers.
         </p>
         <div class="container">
-            <div class="card tfw-card"
-            onclick="openModal('The Fourth Wing',
-            'Twenty-year-old Violet Sorrengail was supposed to enter the Scribe Quadrant, living a quiet life among books and history. Now, the commanding general―also known as her tough-as-talons mother―has ordered Violet to join the hundreds of candidates striving to become the elite of Navarre: dragon riders.', 
-            './assets/tfw-card.jpg',
-            'Author: Rebecca Yarros',
-            'Published: 2023')">
-            </div>
-            <div class="card twow-card"
-            onclick="openModal('The Winds of Winter',
-             'The Winds of Winter is the planned sixth novel in the epic fantasy series A Song of Ice and Fire by American writer George R. R. Martin. The manuscript is expected to be over 1,500 pages in length.[1] Its writing started no later than 2010,[2] and it has been delayed several times, such that Martin has refrained from making further hard estimates for the final release date. Martin stated in October 2022 that he had completed approximately three quarters of the novel, estimating that he had written approximately 1,100 to 1,200 pages, and had roughly 400 to 500 pages left. He gave a similar estimate in November 2023, saying that he was struggling with the manuscript.', 
-             './assets/twow-card.jpg',
-             'Author: George R. R. Martin', 
-             'Published: TBD')">
-            </div>
-            <div class="card c22-card"
-            onclick="openModal('Catch-22',
-             'Set in Italy during World War II, this is the story of the incomparable, malingering bombardier, Yossarian, a hero who is furious because thousands of people he has never met are trying to kill him. But his real problem is not the enemy—it is his own army, which keeps increasing the number of missions the men must fly to complete their service. Yet if Yossarian makes any attempt to excuse himself from the perilous missions he’s assigned, he’ll be in violation of Catch-22, a hilariously sinister bureaucratic rule: a man is considered insane if he willingly continues to fly dangerous combat missions, but if he makes a formal request to be removed from duty, he is proven sane and therefore ineligible to be relieved',
-             './assets/c22-card.jpg', 
-             'Author: Joseph Heller', 
-             'Published: 1961')">   
-            </div>
-            <div class="card tw-card"
-            onclick="openModal('The Witcher: The Last Wish',
-             'Geralt the Witcher—revered and hated—is a man whose magic powers, enhanced by long training and a mysterious elixir, have made him a brilliant fighter and a merciless assassin. Yet he is no ordinary murderer: his targets are the multifarious monsters and vile fiends that ravage the land and attack the innocent. But not everything monstrous-looking is evil and not everything fair is good... and in every fairy tale there is a grain of truth.',
-             './assets/tw-card.jpg',
-             'Author: Andrezej Sapkowski',
-             'Published: 1993')">
-            </div>
-            <div class="card ap-card"
-            onclick="openModal('ap-card',
-             'American Psycho', 
-             '')">
-            </div>
-          </div>
-
+            <!-- latest books displayed here -->
+        </div>
     </div>
     
     <div id="popular" class="section">
@@ -92,38 +59,7 @@
             what you're doing.
         </p> 
         <div class="container">
-            <div class="card lotr-card"
-            onclick="openModal('lotr-card', 
-            'The Lord of the Rings', 
-            '')">
-            </div>
-            <div class="card divergent-card"
-            onclick="openModal('Divergent', 
-            'In Beatrice Prior\'s dystopian Chicago world, society is divided into five factions, each dedicated to the cultivation of a particular virtue—Candor (the honest), Abnegation (the selfless), Dauntless (the brave), Amity (the peaceful), and Erudite (the intelligent). On an appointed day of every year, all sixteen-year-olds must select the faction to which they will devote the rest of their lives. For Beatrice, the decision is between staying with her family and being who she really is—she can\'t have both. So she makes a choice that surprises everyone, including herself.', 
-            './assets/divergent-card.jpg',
-            'Author: Veronica Roth',
-            'Published: 2011')">
-            </div>
-            <div class="card hamlet-card"
-            onclick="openModal('Hamlet', 
-            'The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet, is a tragedy written by William Shakespeare sometime between 1599 and 1601. It is Shakespeare\'s longest play.\n Set in Denmark, the play depicts Prince Hamlet and his attempts to exact revenge against his uncle, Claudius, who has murdered Hamlets father in order to seize his throne and marry Hamlets mother. Hamlet is considered among the most powerful and influential tragedies in the English language, with a story capable of seemingly endless retelling and adaptation by others. It is widely considered one of the greatest plays of all time. Three different early versions of the play are extant: the First Quarto (Q1, 1603); the Second Quarto (Q2, 1604); and the First Folio (F1, 1623). Each version includes lines and passages missing from the others.', 
-            './assets/hamlet-card.jpg',
-            'Author: William Shakespeare',
-            'Published: 1603')">
-            </div>
-            <div class="card thg-card"
-            onclick="openModal('The Hunger Games', 
-            'Could you survive on your own in the wild, with every one out to make sure you don\'t live to see the morning? In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV. Sixteen-year-old Katniss Everdeen, who lives alone with her mother and younger sister, regards it as a death sentence when she steps forward to take her sister\'s place in the Games. But Katniss has been close to dead before—and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weight survival against humanity and life against love.', 
-            './assets/thg-card.jpg',
-            'Author: Suzanne Collins',
-            'Published: 2008')">
-            </div>
-            <div class="card got-card"
-            onclick="openModal('A Game of Thrones', 
-            'Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are massing beyond the kingdom’s protective Wall. To the south, the king’s powers are failing—his most trusted adviser dead under mysterious circumstances and his enemies emerging from the shadows of the throne. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the frozen land they were born to. Now Lord Eddard Stark is reluctantly summoned to serve as the king’s new Hand, an appointment that threatens to sunder not only his family but the kingdom itself. Sweeping from a harsh land of cold to a summertime kingdom of epicurean plenty, A Game of Thrones tells a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens. Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his throne; a child is lost in the twilight between life and death; and a determined woman undertakes a treacherous journey to protect all she holds dear. Amid plots and counter-plots, tragedy and betrayal, victory and terror, allies and enemies, the fate of the Starks hangs perilously in the balance, as each side endeavors to win that deadliest of conflicts: the game of thrones.', 
-            './assets/got-card.jpg',
-            'Author: George R.R. Martin',
-            'Published: 1996')">
+            <!-- popular books displayed here -->
             </div>
           </div>
       
@@ -137,32 +73,7 @@
             (assuming you still go to those).
         </p>
         <div class="container">
-            <div class="card pm-card" 
-            onclick="openModal('pm-card', 
-            'Patrick Melrose', 
-            'patrick Melrose blurb.')">
-            </div>
-            <div class="card tgatpam-card" 
-            onclick="openModal('tgatpam-card',
-            'The Giraffe and the Pelly and Me',
-            '')">
-            </div>
-            <div class="card etif0card-card" 
-            onclick="openModal('etif0card-card',
-            'Everything is F*cked',
-            '')">
-            </div>
-            <div class="card taosh-card" 
-            onclick="openModal('taosh-card',
-            'The Adventures of Sherlock Holmes',
-            '')">
-            </div>
-            <div class="card tmr-card" 
-            onclick="openModal('tmr-card',
-            'The Maze Runner',
-            '')">
-              
-            </div>
+              <!-- ebooks displayed here -->
           </div>
     </div>
           <!-- add video link here, empty for now -->
