@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
 </head>
 <body>
-    
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Placeholder Image">
+        <p>Totally not Methamphetamine - $49.99</p>
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form action="#">
+            <label for="card-name">Cardholder's Name</label>
+            <input type="text" id="card-name" name="card-name" placeholder="Ben Dover" required aria-required="true"/>
+            
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required aria-required="true" />
+            
+            <label for="expiry">Expiry Date:</label>
+            <input type="month" id="expiry" name="expiry" />
+            
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv" />
+
+            <button type="submit">Pay Now</button>
+
+        </form>
+    </section>
 </body>
 </html>
