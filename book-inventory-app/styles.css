@@ -1,0 +1,124 @@
+tr[class="read"] {
+    background-image: linear-gradient(to right, #c8e6c9, #a5d6a7);
+}
+
+tr[class="to-read"]{
+    background-image: linear-gradient(to right, #fff9c4, #fff59d);
+}
+
+tr[class="in-progress"]{
+    background-image: linear-gradient(to right, #bbdefb, #90caf9);
+}
+
+span{
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"]{
+    border: 2px solid #fbc02d;
+    background-image: linear-gradient(#fffde7, #fff9c4);
+}
+
+tr[class="read"] span[class="status"]{
+    border: 2px solid #2e7d32;
+    background-image: linear-gradient(#e8f5ef, #c8e6c9);
+}
+
+tr[class="in-progress"] span[class="status"]{
+    border: 2px solid #1565c0;
+    background-image: linear-gradient(#e3f2fd, #bbdefb);
+
+}
+
+span[class="status"],
+span[class^="rate"]{
+    height: 25px;
+    width: 90px;
+    padding: 4px;
+}
+
+span[class^="rate"] > span{
+    border: 1px solid #333333;
+    border-radius: 50%;
+    margin: 2px;
+    height: 12px;
+    width: 12px;
+    background-color: #eeeeee;
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(to right, #c8e6c9, #a5d6a7);
+}
+
+tr[class="to-read"]{
+    background-image: linear-gradient(to right, #fff9c4, #fff59d);
+}
+
+tr[class="in-progress"]{
+    background-image: linear-gradient(to right, #bbdefb, #90caf9);
+}
+
+span{
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"]{
+    border: 2px solid #fbc02d;
+    background-image: linear-gradient(#fffde7, #fff9c4);
+}
+
+tr[class="read"] span[class="status"]{
+    border: 2px solid #2e7d32;
+    background-image: linear-gradient(#e8f5ef, #c8e6c9);
+}
+
+tr[class="in-progress"] span[class="status"]{
+    border: 2px solid #1565c0;
+    background-image: linear-gradient(#e3f2fd, #bbdefb);
+
+}
+
+span[class="status"],
+span[class^="rate"]{
+    height: 25px;
+    width: 90px;
+    padding: 4px;
+}
+
+span[class^="rate"] > span{
+    border: 1px solid #333333;
+    border-radius: 50%;
+    margin: 2px;
+    height: 12px;
+    width: 12px;
+    background-color: #eeeeee;
+}
+
+span[class~="one"] :first-child {
+    background-image: linear-gradient(gold, orange);
+}
+
+span[class~="two"] :nth-child(-n+2) {
+    background-image: linear-gradient(gold, orange);
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(gold, orange);
+}
+
+
+/* works but fcc doesnt accept */
+
+/* span[class*="one"] span:first-child{
+    background-image: linear-gradient(gold, orange);
+}
+
+span[class*="two"] span:nth-child(1), 
+span[class*="two"] span:nth-child(2){
+    background-image: linear-gradient(gold, orange);
+}
+
+span[class*="three"] span {
+    background-image: linear-gradient(gold, orange);
+} */
+
